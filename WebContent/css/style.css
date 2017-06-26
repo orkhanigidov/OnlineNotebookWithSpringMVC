@@ -1,0 +1,62 @@
+/*Create Note*/
+.createForm{
+	text-align: center;
+	margin-top: 2%;
+}
+
+.createNoteTitle{
+
+}
+
+.createNoteBody{
+	margin-top: 20px;
+}
+
+.createButtons .btn{
+	margin-top: 15px;
+	width: 36.5%;
+}
+/*end of Create Note*/
+
+/*Update Note*/
+.updateForm{
+	text-align: center;
+	margin-top: 2%;
+}
+
+.updateNoteTitle{
+
+}
+
+.updateNoteBody{
+	margin-top: 20px;
+}
+
+.updateButtons .btn{
+	margin-top: 15px;
+	width: 36.5%;
+}
+/*end of Update Note*/
+
+/*Read Note*/
+.readForm{
+	text-align: center;
+	margin-top: 2%;
+}
+
+.readNoteTitle{
+	text-align: center;
+	font-size: 20px;
+}
+
+.readNoteBody{
+	margin-top: 20px;
+	font-size: 17px;
+}
+
+.readButtons .btn{
+	margin-top: 15px;
+	margin-bottom: 50px;
+	width: 30%;
+}
+/*end of Read Note*/
