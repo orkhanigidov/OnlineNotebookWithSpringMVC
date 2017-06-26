@@ -5,14 +5,14 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import notebook.business.NoteDao;
 import notebook.model.Note;
+import notebook.repository.NoteRepository;
 
 @Service
 public class NoteServiceImpl implements NoteService{
 
 	@Autowired
-	private NoteDao dao;
+	private NoteRepository dao;
 	
 	@Override
 	public int remove(int id) {

@@ -1,4 +1,4 @@
-package notebook.business;
+package notebook.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,7 +17,7 @@ import notebook.model.Note;
 import notebook.util.Resize;
 
 @Repository
-public class NoteDaoImpl implements NoteDao {
+public class NoteRepositroyImpl implements NoteRepository {
 
 	private Connection conn = null;
 	private PreparedStatement ps = null;
@@ -28,7 +28,7 @@ public class NoteDaoImpl implements NoteDao {
 	private java.util.Date d = new java.util.Date();
 	private DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 
-	public NoteDaoImpl() {
+	public NoteRepositroyImpl() {
 		query = new DBQuery();
 	}
 

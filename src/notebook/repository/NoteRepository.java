@@ -1,10 +1,10 @@
-package notebook.business;
+package notebook.repository;
 
 import java.util.List;
 
 import notebook.model.Note;
 
-public interface NoteDao {
+public interface NoteRepository {
 
 	public int remove(int id);
 
