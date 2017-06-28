@@ -23,12 +23,14 @@
 
 	<h2 style="text-align: center;">Update Note</h2>
 
-	<form:form method="post" action="${path}/note/update">
+	<form:form commandName="updateNote" method="post" action="${path}/note/update">
 		<div class="form-group updateForm">
 			<form:hidden path="id"/>	
 
 			<form:input path="title" type="text" class="updateNoteTitle"
 				size="50%" placeholder="Title" />
+			<br />
+			<form:errors path="title" cssClass="text-danger" />
 			<br />
 
 			<div class="col-md-8 col-md-offset-2">

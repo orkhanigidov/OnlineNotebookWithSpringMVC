@@ -12,36 +12,36 @@ import notebook.repository.NoteRepository;
 public class NoteServiceImpl implements NoteService{
 
 	@Autowired
-	private NoteRepository dao;
+	private NoteRepository repository;
 	
 	@Override
 	public int remove(int id) {
-		return dao.remove(id);
+		return repository.remove(id);
 	}
 
 	@Override
 	public Note create(Note note) {
-		return dao.create(note);
+		return repository.create(note);
 	}
 
 	@Override
 	public int update(Note note) {
-		return dao.update(note);
+		return repository.update(note);
 	}
 
 	@Override
 	public List<Note> getAll() {
-		return dao.getAll();
+		return repository.getAll();
 	}
 
 	@Override
 	public Note getNoteById(int id) {
-		return dao.getNoteById(id);
+		return repository.getNoteById(id);
 	}
 	
 	@Override
 	public List<Note> search(String title) {
-		return dao.search(title);
+		return repository.search(title);
 	}
 
 }

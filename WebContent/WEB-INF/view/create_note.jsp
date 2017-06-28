@@ -12,8 +12,7 @@
 <title>Create Note</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css"
-	href="${path}/css/style.css">
+<link rel="stylesheet" type="text/css" href="${path}/css/style.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
@@ -23,21 +22,24 @@
 
 	<h2 style="text-align: center;">Create Note</h2>
 
-	<form:form method="post" action="${path}/note/create">
+	<form:form commandName="createNote" method="post"
+		action="${path}/note/create">
 		<div class="form-group createForm">
-			<form:input path="title" type="text" class="createNoteTitle" size="50%"
-				placeholder="Title" /><br />
+			<form:input path="title" type="text" class="createNoteTitle"
+				size="50%" placeholder="Title" />
+			<br />
+			<form:errors path="title" cssClass="text-danger" />
+			<br />
 
 			<div class="col-md-8 col-md-offset-2">
-				<form:textarea path="note" rows="20" cols="100" class="createNoteBody"
-					placeholder="Note"></form:textarea>
+				<form:textarea path="note" rows="20" cols="100"
+					class="createNoteBody" placeholder="Note"></form:textarea>
 				<br />
 
 				<div class="createButtons">
 					<input class="btn btn-info" type="submit" name="createSaveBtn"
-						value="Save" /> 
-						<input class="btn btn-danger" type="submit" name="cancel"
-						 value="Back To Home" />
+						value="Save" /> <input class="btn btn-danger" type="submit"
+						name="cancel" value="Back To Home" />
 				</div>
 			</div>
 		</div>

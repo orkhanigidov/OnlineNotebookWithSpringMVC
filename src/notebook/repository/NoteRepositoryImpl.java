@@ -17,7 +17,7 @@ import notebook.model.Note;
 import notebook.util.Resize;
 
 @Repository
-public class NoteRepositroyImpl implements NoteRepository {
+public class NoteRepositoryImpl implements NoteRepository {
 
 	private Connection conn = null;
 	private PreparedStatement ps = null;
@@ -28,7 +28,7 @@ public class NoteRepositroyImpl implements NoteRepository {
 	private java.util.Date d = new java.util.Date();
 	private DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 
-	public NoteRepositroyImpl() {
+	public NoteRepositoryImpl() {
 		query = new DBQuery();
 	}
 
