@@ -28,17 +28,8 @@
 			</h2>
 		</div>
 
-		<div class="pull-right" style="margin-top: 10px;">
-			<button class="btn btn-warning">User</button>
-
-			<button class="btn btn-info">Login</button>
-
-			<button class="btn btn-success" style="margin-left: 5px;">Sign
-				up</button>
-		</div>
-
 		<div class="pull-right"
-			style="margin-top: 130px; margin-right: -80px;">
+			style="margin-top: 130px; margin-right: 125px;">
 			<form:form action="${path}/note/search" method="post">
 				<input name="title" class="form-group" type="text"
 					size="30" placeholder="Title" />

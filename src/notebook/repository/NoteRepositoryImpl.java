@@ -91,6 +91,7 @@ public class NoteRepositoryImpl implements NoteRepository {
 
 	@Override
 	public List<Note> getAll() {
+
 		List<Note> notes = new ArrayList<Note>();
 		try {
 			conn = DBConnection.getConnection();
@@ -113,7 +114,6 @@ public class NoteRepositoryImpl implements NoteRepository {
 
 		return notes;
 	}
-
 
 	@Override
 	public Note getNoteById(int id) {
@@ -145,7 +145,7 @@ public class NoteRepositoryImpl implements NoteRepository {
 		try {
 			conn = DBConnection.getConnection();
 			ps = conn.prepareStatement(query.getSearchNote());
-			ps.setString(1, title + "%");
+			ps.setString(1, title.toLowerCase() + "%");
 			rs = ps.executeQuery();
 
 			while (rs.next()) {

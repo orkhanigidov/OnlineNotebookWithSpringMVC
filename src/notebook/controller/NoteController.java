@@ -31,9 +31,8 @@ public class NoteController {
 
 	@RequestMapping(value = "/create", params = "createSaveBtn", method = RequestMethod.POST)
 	public ModelAndView create(@ModelAttribute("createNote") Note note, BindingResult result) {
-
 		noteValidator.validate(note, result);
-		
+
 		if (result.hasErrors()) {
 			return new ModelAndView("create_note", "create", note);
 		}
