@@ -33,9 +33,9 @@ public class NoteController {
 	public ModelAndView create(@ModelAttribute("createNote") Note note, BindingResult result) {
 		noteValidator.validate(note, result);
 
-		if (result.hasErrors()) {
+		if (result.hasErrors()) 
 			return new ModelAndView("create_note", "create", note);
-		}
+		
 
 		return new ModelAndView("redirect:/", "create", service.create(note));
 	}
